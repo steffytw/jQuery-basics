@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JQuery</title>
+	<style type="text/css">
+		.refractor{
+			position : absolute;
+			display: inline-block;
+			left: 0px;
+		}
+	</style>
+</head>
+<body>
+	<p>Daffodils</p>
+	<button class="btn1">Fade out</button>
+    <button class="btn2">Fade in</button>
+	<!-- <div class="refractor">refractor</div> -->
+	<script type="text/javascript" src="jquery-3.4.1.min.js"></script>
+	<script type="text/javascript">
+		// $(document).ready(function(){
+  // 			$("p").click(function(){
+  //   			// $(this).hide();
+  //   			$(".refractor").animate({left:"250px"},2000);
+ 	// 		 });
+		// });
+		$(document).ready(function(){
+		  $(".btn1").click(function(){
+		    $("p").fadeOut();
+		    });
+		  $(".btn2").click(function(){
+		    $("p").fadeIn();
+		   });
+       });
+	</script>
+
+</body>
+</html>
